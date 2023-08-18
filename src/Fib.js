@@ -24,6 +24,7 @@ export default class Fib extends Component {
     this.setState({ seenIndexes: seenIndexes.data });
   }
 
+  // bound function
   handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -48,6 +49,8 @@ export default class Fib extends Component {
         </div>
       );
     }
+
+    return entries;
   }
 
   render() {
